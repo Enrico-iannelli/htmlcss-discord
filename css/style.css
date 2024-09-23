@@ -1,0 +1,153 @@
+/* # RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* # UTILS */
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 1000px;
+  max-width: 100%;
+}
+
+/* # HEADER */
+
+/* * Upper Header */
+
+.upper-header {
+  padding: 15px 0;
+  background-color: #acd6e4;
+}
+
+.upper-header > .container {
+  display: flex;
+  align-items: center;
+}
+
+.upper-header .header-item {
+  flex-basis: 20%;
+  padding: 5px 10px;
+}
+
+.upper-header .nav-container {
+  flex-grow: 1;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.upper-header .login-container {
+  text-align: right;
+}
+
+.button,
+.button-browser,
+.button-download {
+  padding: 8px;
+  border: 0;
+  border-radius: 20px;
+}
+
+.button-browser {
+  background-color: black;
+  color: white;
+}
+
+.button-download {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+/* * Hero Section */
+
+.img-hero {
+  width: 100%;
+  height: 100%;
+}
+
+.page-hero {
+  text-align: center;
+}
+/* # MAIN */
+
+/* * COL SECTION */
+
+.main-section {
+  padding: 45px 0;
+}
+
+.main-section > .container {
+  display: flex;
+}
+
+.main-section.single-col > .container {
+  /* debug */
+  min-height: 800px;
+  background-color: darkgreen;
+  border: 2px dashed black;
+}
+
+.main-section:nth-child(even) > .container {
+  flex-direction: row-reverse;
+}
+
+.main-section .large-col {
+  flex-basis: 60%;
+  /* debug */
+  min-height: 400px;
+}
+
+.main-section .small-col {
+  flex-basis: 40%;
+  align-content: center;
+
+  /* debug */
+  min-height: 400px;
+}
+
+.main-section .single-col {
+  flex-basis: 100%;
+  text-align: center;
+  /* debug */
+  min-height: 600px;
+}
+
+/* FOOTER */
+
+.footer {
+  /* debug */
+  background-color: #222629;
+}
+
+/* * UPPER FOOTER */
+.upper-footer > .container {
+  display: flex;
+}
+
+.upper-footer > .small-col {
+  flex-basis: 30%;
+
+  /* debug */
+  background-color: #ee8081;
+  min-height: 500px;
+  border: 2px dashed black;
+}
+
+.upper-footer > .large-col {
+  flex-basis: 70%;
+
+  /* debug */
+  background-color: #1fafa6;
+  min-height: 500px;
+  border: 2px dashed black;
+}
+
+.upper-footer .smaller-col {
+  width: 25%;
+  border: 2px dashed white;
+}
